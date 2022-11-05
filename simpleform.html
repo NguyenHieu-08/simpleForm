@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form cơ bản</title>
+
+    <style>
+        .form-1 {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        div{
+            margin: 2px 0px 2px 0px;
+            padding: 1px 0px 1px 0px;
+        }
+        span {
+            color: red;
+        }
+        input{
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="form-1" action="simpleForm.html" method="get">
+        <h2>Order Form</h2>
+        <div>
+            <p>What would you like to buy?</p>
+            <select>
+                <option value="A">A</option>
+                <option value="B">B (+ 0.5$)</option>
+                <option value="C">C (+ 0.5$)</option>
+            </select>
+        </div>
+        <div>
+            <p>How many would you like to order</p>
+            <input id="price" name="price" type="radio" checked> 1 - $10 <br>
+            <input id="price" name="price" type="radio"> 2 - $20 <br>
+            <input id="price" name="price" type="radio"> 3 - $25
+        </div>
+        <div>
+            <label id="name">Name
+                <span>*</span>
+            </label>
+            <br>
+            <input id="firstName" name="firstName" type="text" placeholder="FirstName">
+            <input id="LastName" name="lastName" type="text" placeholder="LastName">
+        </div>
+
+        <div>
+            <label id="email">Email</label>
+            <br>
+            <input id="email" name="email" type="text" placeholder="Email" size="35">
+        </div>
+        <div>
+            <label id="phoneNumber">Phone Number</label>
+            <br>
+            <input id="firstPhoneNumber" name="firstPhoneNumber" type="number" size="5"> -
+            <input id="midPhoneName" name="midPhoneName" type="number" size="5"> -
+            <input id="lastPhoneNumber" name="lastPhoneNumber" type="number" size="5">
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
